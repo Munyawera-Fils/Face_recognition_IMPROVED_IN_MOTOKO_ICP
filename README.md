@@ -1,10 +1,10 @@
-# `icp_rwanda_facial`
+# `Team_rwanda_facial`
 
-Welcome to your new `icp_rwanda_facial` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+Welcome to your new `Team_rwanda_facial` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
 To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
 
-To learn more before you start working with `icp_rwanda_facial`, see the following documentation available online:
+To learn more before you start working with `Team_rwanda_facial`, see the following documentation available online:
 
 - [Quick Start](https://internetcomputer.org/docs/current/developer-docs/setup/deploy-locally)
 - [SDK Developer Tools](https://internetcomputer.org/docs/current/developer-docs/setup/install)
@@ -14,10 +14,8 @@ To learn more before you start working with `icp_rwanda_facial`, see the followi
 If you want to start working on your project right away, you might want to try the following commands:
 
 ```bash
-cd icp_rwanda_facial/
-dfx help
-dfx canister --help
-```
+cd face-detection-AI-ON-ICP/
+
 
 ## Running the project locally
 
@@ -26,6 +24,9 @@ If you want to test your project locally, you can use the following commands:
 ```bash
 # Starts the replica, running in the background
 dfx start --background
+# Install npm
+
+npm install
 
 # Deploys your canisters to the replica and generates your candid interface
 dfx deploy
@@ -48,6 +49,27 @@ npm start
 ```
 
 Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 4943.
+
+
+## Instructions for Use
+### Sign Up and Login:
+
+Users register by creating an account with an email and password on the decentralized AI system.
+After registration, users can log in to access the camera and image capture features.
+### Start Camera:
+
+Users click Start Camera to activate their front-facing camera, positioning themselves in view.
+### Capture Image:
+
+Click Capture Image to take a picture, and then Upload to store the image in a canister for ongoing authentication.
+### Start Managed Session:
+
+Once the image is uploaded, users click Start Managed Session to initiate the AI-powered continuous monitoring session.
+The system will check every ten seconds to ensure the user remains the same.
+### System Alerts:
+
+If an anomaly is detected (i.e., a different person appears in front of the camera), an alert is issued, and the user is logged out immediately to maintain the integrity of the exam session.
+
 
 ### Note on frontend environment variables
 

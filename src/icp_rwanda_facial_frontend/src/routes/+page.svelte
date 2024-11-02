@@ -179,7 +179,7 @@
 <div class="container">
   {#if !isLoggedIn}
     <div class="text-center mt-5">
-      <h1>Welcome to ICP Rwanda Facial Recognition</h1>
+      <h1>Welcome to Team Rwanda Facial Recognition</h1>
       <p>Sign up or log in to get started.</p>
     </div>
 
@@ -250,6 +250,6 @@
   {/if}
 
   <footer class="text-center mt-5">
-    <p>&copy; Developed by the ICP Rwanda Team</p>
+    <p>&copy; Developed by the Team Rwanda </p>
   </footer>
 </div>
