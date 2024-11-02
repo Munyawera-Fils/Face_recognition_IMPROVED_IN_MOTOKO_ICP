@@ -38,6 +38,14 @@
     }
   };
 
+  const logout = () => {
+    stopManagedSession();
+    isLoggedIn = false;
+    loginEmail = '';
+    loginPassword = '';
+    alert("Logged out successfully.");
+  };
+
   const fetchStoredImage = async () => {
     const storedImage = await backend.getImage(loginEmail);
     if (storedImage) {
@@ -79,8 +87,8 @@
   };
 
   const compareImages = async () => {
-    isCheckingUser = true; 
-    logMessage = "Checking user identity..."; 
+    isCheckingUser = true;
+    logMessage = "Checking user identity...";
 
     try {
       const response = await fetch('http://54.225.49.40:5005/compare-base', {
@@ -100,7 +108,7 @@
       const data = await response.json();
       isSameUser = data.match;
 
-      logMessage = isSameUser ? 
+      logMessage = isSameUser ?
         "User identity confirmed. You are still logged in." :
         "User identity could not be confirmed. Please log in again.";
 
@@ -110,7 +118,7 @@
       stopManagedSession();
       console.error(error);
     } finally {
-      isCheckingUser = false; 
+      isCheckingUser = false;
     }
   };
 
@@ -232,6 +240,7 @@
       
       <button class="btn btn-warning w-100 mb-2" on:click={captureImage}>Capture Image</button>
       <button class="btn btn-primary w-100 mb-2" on:click={uploadImage}>Upload Image</button>
+      <button class="btn btn-outline-danger w-100 mb-2" on:click={logout}>Logout</button>
 
       {#if !isSameUser}
         <div class="alert alert-danger">User identity could not be confirmed. Please log in again.</div>
