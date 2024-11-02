@@ -112,10 +112,11 @@
         "User identity confirmed. You are still logged in." :
         "User identity could not be confirmed. Please log in again.";
 
-      if (!isSameUser) stopManagedSession();
+      if (!isSameUser) logout();
     } catch (error) {
+      alert('User identity could not be confirmed. Please log in again.');
       logMessage = `Error: ${error.message}`;
-      stopManagedSession();
+      logout();
       console.error(error);
     } finally {
       isCheckingUser = false;
