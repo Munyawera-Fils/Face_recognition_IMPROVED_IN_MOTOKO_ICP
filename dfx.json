@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "icp_rwanda_facial_backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/icp_rwanda_facial_backend/main.mo",
+      "type": "motoko"
+    },
+    "icp_rwanda_facial_frontend": {
+      "dependencies": [
+        "icp_rwanda_facial_backend"
+      ],
+      "source": [
+        "src/icp_rwanda_facial_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "icp_rwanda_facial_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
