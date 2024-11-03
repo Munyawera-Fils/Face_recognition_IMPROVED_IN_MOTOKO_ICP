@@ -1,4 +1,4 @@
-# `Team_rwanda_facial`
+# `Team_Rwanda_facial`
 
 Welcome to your new `Team_rwanda_facial` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
@@ -23,7 +23,7 @@ If you want to test your project locally, you can use the following commands:
 
 ```bash
 # Starts the replica, running in the background
-dfx start --background
+ dfx start --clean --background 
 # Install npm
 
 npm install
@@ -51,7 +51,7 @@ npm start
 Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 4943.
 
 
-## Instructions for Use
+# Instructions for Use
 ### Sign Up and Login:
 
 Users register by creating an account with an email and password on the decentralized AI system.
