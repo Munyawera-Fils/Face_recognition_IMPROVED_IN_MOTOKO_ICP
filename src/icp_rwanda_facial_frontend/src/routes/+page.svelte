@@ -91,7 +91,7 @@
     logMessage = "Checking user identity...";
 
     try {
-      const response = await fetch('http://54.225.49.40:5005/compare-base', {
+      const response = await fetch('https://ai.hdev.rw/compare-base', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
