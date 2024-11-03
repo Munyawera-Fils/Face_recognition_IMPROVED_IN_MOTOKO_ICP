@@ -1,15 +1,13 @@
-# `Team_Rwanda_facial`
+# `Team_Rwanda_facial_Recognition_AI`
 
-Welcome to your new `Team_rwanda_facial` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+### Continuous Authentication Solution
+The solution uses AI-based continuous authentication to confirm that the person taking the exam on the device remains the same throughout the entire duration. This method is essential to avoid cheating or unauthorized handovers.
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
-
-To learn more before you start working with `Team_rwanda_facial`, see the following documentation available online:
-
-- [Quick Start](https://internetcomputer.org/docs/current/developer-docs/setup/deploy-locally)
-- [SDK Developer Tools](https://internetcomputer.org/docs/current/developer-docs/setup/install)
-- [Motoko Programming Language Guide](https://internetcomputer.org/docs/current/motoko/main/motoko)
-- [Motoko Language Quick Reference](https://internetcomputer.org/docs/current/motoko/main/language-manual)
+### How it Works:
+The camera captures the user’s image at the start of the exam session.
+Images are stored securely within an ICP canister for periodic comparison working with endpoints.
+The AI system takes an image every ten seconds, analyzing it against the initially stored image.
+If the user leaves the device or if another person appears, the system detects the difference and issues an alert, terminating the session.
 
 If you want to start working on your project right away, you might want to try the following commands:
 
