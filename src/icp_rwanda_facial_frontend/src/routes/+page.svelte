@@ -250,6 +250,6 @@
   {/if}
 
   <footer class="text-center mt-5">
-    <p>&copy; Developed by the Team Rwanda </p>
+    <p>&copy; Developed by ICP Rwanda </p>
   </footer>
 </div>

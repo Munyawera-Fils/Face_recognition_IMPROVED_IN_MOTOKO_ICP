@@ -1,4 +1,4 @@
-# `Team_Rwanda_facial_Recognition_AI`
+# `ICP_Rwanda_Improved_facial_Recognition_AI_in_MOTOKO`
 
 ### Continuous Authentication Solution
 The solution uses AI-based continuous authentication to confirm that the person taking the exam on the device remains the same throughout the entire duration. This method is essential to avoid cheating or unauthorized handovers.
@@ -12,7 +12,7 @@ If the user leaves the device or if another person appears, the system detects t
 If you want to start working on your project right away, you might want to try the following commands:
 
 ```bash
-cd face-detection-AI-ON-ICP/
+cd Face_recognition_IMPROVED_IN_MOTOKO_ICP/
 
 
 ## Running the project locally
